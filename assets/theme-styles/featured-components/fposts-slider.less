@@ -1,0 +1,179 @@
+/* ACCORDIAN POSTS */
+
+#overlap-slider {
+  overflow: hidden;
+  /*Time for some styling*/
+  padding: 30px 0;
+  background: #e7e7e7;
+  padding-bottom: 40px;
+  @media screen and (max-width: 767px) {
+    padding: 10px 0;
+  }
+  .slider-overlap-posts {
+    padding: 0;
+  }
+  .overlap-wrapper {
+    width: 100%;
+    height: 400px;
+    @media screen and (max-width: 991px) {
+      height: 228px;
+    }
+    overflow: hidden;
+    .slide {
+      position: relative;
+      display: block;
+      width: 20%;
+      height: 100%;
+      float: left;
+      background: transparent;
+      box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.4), -3px 0px 0 fade(@s-accent, 30%);
+      z-index: 102;
+      .transition(0.4s all ease);
+      overflow: hidden;
+      &:first-child {
+        box-shadow: none;
+        border-left: none;
+      }
+      img {
+        display: block;
+      }
+      .image {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        top: 0;
+        right: 0;
+        width: 700px;
+        @media screen and (max-width: 991px) {
+          width: 400px;
+        }
+        z-index: 100;
+      }
+      .post-details {
+        position: absolute;
+        z-index: 101;
+        bottom: 1%;
+        left: 1%;
+        right: 1%;
+        background: fade(@accent,80%);
+        padding: 15px;
+        font-size: 14px;
+        h3 {
+          margin: 0;
+          font-size: 16px;
+          font-weight: bold;
+          text-transform: uppercase;
+        };
+        width: 98%;
+        min-width: 400px;
+        @media screen and (max-width: 991px) {
+          min-width: 390px;
+          max-width: 394px;
+        }
+
+        @media screen and (max-width: 767px) {
+          padding: 10px;
+          min-width: 200px;
+          max-width: 200px;
+          h3 {
+            font-size: 12px;
+            text-align: left;
+          }
+        }
+        text-align: center;
+        color: @onaccent;
+        opacity: 0;
+        .transition(0.8s all ease);
+      }
+    }
+    &:hover {
+      .slide {
+        width: 11%;
+        &:hover {
+          width: 56%;
+          .post-details {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
+
+#slider-feat_posts {
+  background: #f3f3f3;
+  padding: 20px 15px;
+  overflow: hidden;
+  .swiper-posts-slider {
+    position: relative;
+  }
+  .swiper-wrapper {
+    position: relative;
+  }
+  .swiper-container-horizontal>.swiper-pagination {
+    bottom: -32px;
+  }
+  .swiper-pagination-white .swiper-pagination-bullet {
+    background: #777;
+    opacity: 0.5;
+  }
+  .swiper-pagination-white .swiper-pagination-bullet-active {
+    background: @t-accent;
+    opacity: 1;
+  }
+
+  .swiper-slide {
+    .product-details {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      h3 {
+        margin: 0;
+        padding: 8px 8px;
+        font-size: 16px;
+        background: fade(@t-accent,60%);
+        width: 100%;
+        color: white;
+        font-weight: normal;
+        .title-font;
+      }
+    }
+    img {
+      .transition(0.4s all ease);
+      -webkit-filter: brightness(0.8);
+      filter: brightness(0.8);
+    }
+    &:nth-child(3n+1) .product-details h3 {
+      background: fade(@accent,90%);
+    }
+    &:nth-child(3n+2) .product-details h3 {
+      background: fade(@s-accent,90%);
+    }
+    &:nth-child(3n+3) .product-details h3 {
+      background: fade(@t-accent,90%);
+    }
+    &:hover {
+      img {
+        -webkit-filter: brightness(1);
+        filter: brightness(1);
+      }
+    }
+  }
+
+}
+
+/*Image title styles*/
+.image_title {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0; bottom: 0;
+  width: 640px;
+
+}
+.image_title a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 20px;
+  font-size: 16px;
+}

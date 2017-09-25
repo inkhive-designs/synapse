@@ -3,6 +3,17 @@
  * @package synapse, Copyright Rohit Tripathi, rohitink.com
  * This file contains Custom Theme Related Functions.
  */
+/*
+ * @package madhat, Copyright Rohit Tripathi, rohitink.com
+ * This file contains Custom Theme Related Functions.
+ */
+//Import Admin Modules
+require get_template_directory() . '/framework/admin_modules/register_styles.php';
+require get_template_directory() . '/framework/admin_modules/register_widgets.php';
+require get_template_directory() . '/framework/admin_modules/theme_setup.php';
+require get_template_directory() . '/framework/admin_modules/admin_styles.php';
+require get_template_directory() . '/framework/admin_modules/excerpt_length.php';
+require get_template_directory() . '/framework/admin_modules/compatibility_function.php';
  
  
 class Synapse_Menu_With_Description extends Walker_Nav_Menu {

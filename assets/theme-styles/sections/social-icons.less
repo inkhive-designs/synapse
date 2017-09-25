@@ -1,0 +1,27 @@
+#bar {
+  .social-icons {
+    display: inline-block;
+    float: right;
+    background: @accent;;
+    a {
+
+      padding: 19px 10px;
+      display: inline-block;
+      font-size: 22px;
+      color: @onaccent;
+      &:before {
+        background: @s-accent;
+      }
+      &:first-child {
+        margin-left: 14px;
+      }
+      &:last-child {
+        margin-right: 14px;
+      }
+    }
+    @media screen and (max-width: 767px) {
+      width: 100%;
+      text-align: left;
+    }
+  }
+}
