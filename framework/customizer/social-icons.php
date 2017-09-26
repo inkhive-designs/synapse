@@ -5,6 +5,37 @@ $wp_customize->add_section('synapse_social_section', array(
     'title' => __('Social Icons','synapse'),
     'priority' => 44 ,
 ));
+//social icons style
+    $social_style = array(
+        'hvr-bounce-to-bottom'  => __('Default', 'synapse'),
+        'hvr-wobble-bottom'   => __('Style 1', 'synapse'),
+        'hvr-ripple-out'   => __('Style 2', 'synapse'),
+        'hvr-rectangle-in'   => __('Style 3', 'synapse'),
+        'hvr-bubble-float-bottom'   => __('Style 4', 'synapse'),
+
+    );
+    $wp_customize->add_setting(
+        'synapse_social_icon_style_set', array(
+        'sanitize_callback' => 'synapse_sanitize_social_style',
+        'default' => 'hvr-bounce-to-bottom'
+    ));
+
+    function synapse_sanitize_social_style( $input ) {
+        if ( in_array($input, array('hvr-bounce-to-bottom','hvr-wobble-bottom','hvr-ripple-out','hvr-rectangle-in','hvr-bubble-float-bottom') ) )
+            return $input;
+        else
+            return '';
+    }
+
+    $wp_customize->add_control( 'synapse_social_icon_style_set', array(
+        'settings' => 'synapse_social_icon_style_set',
+        'label' => __('Social Icon Style ','synapse'),
+        'description' => __('You can choose your icon style','synapse'),
+        'section' => 'synapse_social_section',
+        'type' => 'select',
+        'choices' => $social_style,
+    ));
+
 
 $social_networks = array( //Redefinied in Sanitization Function.
     'none' => __('-','synapse'),

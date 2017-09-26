@@ -4,7 +4,6 @@
     float: right;
     background: @accent;;
     a {
-
       padding: 19px 10px;
       display: inline-block;
       font-size: 22px;
@@ -23,5 +22,24 @@
       width: 100%;
       text-align: left;
     }
+    .hvr-ripple-out{
+      &:before{
+        background: none;
+      }
+    }
+    .hvr-rectangle-in{
+      background: @s-accent;
+      color: @onaccent;
+      &:hover{
+        background: @t-accent;
+        color: @onaccent;
+      }
+    }
+    .hvr-bubble-float-bottom{
+      &:before{
+        background: none !important;
+      }
+    }
   }
+
 }

@@ -54,6 +54,42 @@ function synapse_custom_css_mods() {
 		echo "#masthead .custom-logo { transform: scale(".$val."); -webkit-transform: scale(".$val."); -moz-transform: scale(".$val."); -ms-transform: scale(".$val."); }";
 		endif;
 
+    // page & post fontsize
+    if(get_theme_mod('synapse_content_page_post_fontsize_set')):
+        $val = get_theme_mod('synapse_content_page_post_fontsize_set');
+        if($val=='small'):
+            echo "#primary-mono .entry-content{ font-size:12px;}";
+        elseif ($val=='medium'):
+            echo "#primary-mono .entry-content{ font-size:16px;}";
+        elseif ($val=='large'):
+            echo "#primary-mono .entry-content{ font-size:18px;}";
+        elseif ($val=='extra-large'):
+            echo "#primary-mono .entry-content{ font-size:20px;}";
+        endif;
+    else:
+        echo "#primary-mono .entry-content{ font-size:14px;}";
+    endif;
+    //site title font size
+    //var_dump(get_theme_mod('synapse_content_site_fontsize_set'));
+    if(get_theme_mod('synapse_content_site_title_fontsize_set')):
+        $val = get_theme_mod('synapse_content_site_title_fontsize_set');
+        if($val != 'default'):
+            echo ".site-branding .site-title {font-size:".$val."px !important;}";
+        else:
+            echo ".site-branding .site-title {font-size:50"."px;}";
+        endif;
+    endif;
+
+    //site desc font size
+    //var_dump(get_theme_mod('synapse_content_site_desc_fontsize_set'));
+    if(get_theme_mod('synapse_content_site_desc_fontsize_set')):
+        $val=get_theme_mod('synapse_content_site_desc_fontsize_set');
+        if($val != 'default'):
+            echo ".site-branding .site-description{font-size:".$val."px !important;}";
+        else:
+            echo ".site-branding .site-description {font-size:15"."px;}";
+        endif;
+    endif;
 	echo "</style>";
 }
 

@@ -24,7 +24,7 @@ $wp_customize->add_setting(
 );
 
 function synapse_sanitize_blog_layout( $input ) {
-    if ( in_array($input, array('grid','grid_2_column','synapse') ) )
+    if ( in_array($input, array('grid','grid_2_column','synapse','maximum') ) )
         return $input;
     else
         return '';
@@ -40,6 +40,7 @@ $wp_customize->add_control(
             'grid' => __('Standard Blog Layout','synapse'),
             'synapse' => __('Synapse Theme Layout','synapse'),
             'grid_2_column' => __('Grid - 2 Column','synapse'),
+            'maximum' => __('Maximum Layout','synapse'),
         )
     )
 );

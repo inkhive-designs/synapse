@@ -1,5 +1,11 @@
 ChangeLog
 =========
+Version 1.0.6
+    i) File structure switched to new framework.
+    ii) Added 4 new social icon styles.
+    iii) Added new blog layout called maximum.
+    iv) Added typography option for site title, description, page/post content.
+    v) Added new skins called red.
 
 Version 1.0.4	
 

@@ -19,7 +19,9 @@ $wp_customize->add_setting(
 
 $skins = array( 'default' => __('Default (Red/Yellow/Blue)','synapse'),
     'brown' =>  __('Dark Red/Dark Green/Brown','synapse'),
-    'green' => __('Green/Yellow/Orange','synapse') );
+    'green' => __('Green/Yellow/Orange','synapse'),
+    'red'   => __('Sea Green/Red/Purple'));
+
 
 $wp_customize->add_control(
     'synapse_skin',array(
@@ -31,7 +33,7 @@ $wp_customize->add_control(
 );
 
 function synapse_sanitize_skin( $input ) {
-    if ( in_array($input, array('default','orange','brown','green','grayscale') ) )
+    if ( in_array($input, array('default','orange','brown','green','grayscale','red') ) )
         return $input;
     else
         return '';
