@@ -3,9 +3,18 @@
     background-color: @accent;
     .postedon{
       background: @s-accent;
-      .entry-date,.author a{
-        color: @accent;
+      a{
+        text-decoration: none;
+      }
+      .author a{
+        color: darken(@onaccent,10%);
         font-weight: bold;
+        text-decoration: none !important;
+      }
+      .posted-on .entry-date{
+        color: darken(@onaccent,10%);
+        font-weight: bold;
+        text-decoration: none !important;
       }
     }
     .readmore a{
@@ -15,10 +24,19 @@
   &:nth-child(3n+2){
     background-color: @s-accent;
     .postedon{
+      a{
+        text-decoration: none;
+      }
       background: @t-accent;
-      .entry-date,.author a{
-        color: @s-accent;
+     .author a{
+        color: darken(@onaccent,10%);
         font-weight: bold;
+        text-decoration: none !important;
+      }
+      .entry-date{
+        color: darken(@onaccent,10%);
+        font-weight: bold;
+        text-decoration: none !important;
       }
     }
     .readmore a{
@@ -28,10 +46,19 @@
   &:nth-child(3n+3){
     background-color: @t-accent;
     .postedon{
+      a{
+        text-decoration: none;
+      }
       background: @accent;
-      .entry-date,.author a{
-        color: @t-accent;
+      .author a{
+        color: darken(@onaccent,10%);
         font-weight: bold;
+        text-decoration: none !important;
+      }
+      .entry-date{
+        color: darken(@onaccent,10%);
+        font-weight: bold;
+        text-decoration: none !important;
       }
     }
     .readmore a{

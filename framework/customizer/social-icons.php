@@ -9,9 +9,9 @@ $wp_customize->add_section('synapse_social_section', array(
     $social_style = array(
         'hvr-bounce-to-bottom'  => __('Default', 'synapse'),
         'hvr-wobble-bottom'   => __('Style 1', 'synapse'),
-        'hvr-ripple-out'   => __('Style 2', 'synapse'),
-        'hvr-rectangle-in'   => __('Style 3', 'synapse'),
-        'hvr-bubble-float-bottom'   => __('Style 4', 'synapse'),
+        'style2'   => __('Style 2', 'synapse'),
+        'style3'   => __('Style 3', 'synapse'),
+        'style4'   => __('Style 4', 'synapse'),
 
     );
     $wp_customize->add_setting(
@@ -21,7 +21,7 @@ $wp_customize->add_section('synapse_social_section', array(
     ));
 
     function synapse_sanitize_social_style( $input ) {
-        if ( in_array($input, array('hvr-bounce-to-bottom','hvr-wobble-bottom','hvr-ripple-out','hvr-rectangle-in','hvr-bubble-float-bottom') ) )
+        if ( in_array($input, array('hvr-bounce-to-bottom','hvr-wobble-bottom','style2','style3','style4') ) )
             return $input;
         else
             return '';
