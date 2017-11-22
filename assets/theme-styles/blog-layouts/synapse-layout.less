@@ -50,7 +50,9 @@
     bottom: 0px;
     width: 100%;
     .transform(translateY(4px) scale(1.1));
-    opacity: 0;
+    @media screen and (min-width: 767px) {
+      opacity: 0;
+    }
     .transition(0.6s all ease-in);
     transform-origin: center;
     h1 {
@@ -70,20 +72,22 @@
       text-align: center;
     }
   }
-  &:hover {
-    .out-thumb {
-      .transform(translateY(-20px) scale(1.1) rotate(-2deg));
-      .transition(0.6s all ease-out);
-      opacity: 1;
-      h1 a {
+  @media screen and (min-width: 767px) {
+    &:hover {
+      .out-thumb {
+        .transform(translateY(-20px) scale(1.1) rotate(-2deg));
+        .transition(0.6s all ease-out);
+        opacity: 1;
+        h1 a {
+        }
       }
-    }
-    img {
-      .transform(scale(1.05) );
+      img {
+        .transform(scale(1.05));
 
-    }
-    .postedon {
-      .transform(translateX(5px));
+      }
+      .postedon {
+        .transform(translateX(5px));
+      }
     }
   }
 }

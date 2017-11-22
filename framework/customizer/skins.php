@@ -20,7 +20,7 @@ $wp_customize->add_setting(
 $skins = array( 'default' => __('Default (Red/Yellow/Blue)','synapse'),
     'brown' =>  __('Dark Red/Dark Green/Brown','synapse'),
     'green' => __('Green/Yellow/Orange','synapse'),
-    'red'   => __('Sea Green/Red/Purple'));
+    'red'   => __('Sea Green/Red/Purple','synapse'));
 
 
 $wp_customize->add_control(
