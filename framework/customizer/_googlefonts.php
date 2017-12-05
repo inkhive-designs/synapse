@@ -6,7 +6,8 @@ $wp_customize->add_section(
     array(
         'title'     => __('Google Web Fonts','synapse'),
         'priority'  => 41,
-        'description' => __('Defaults: Play, Lap.','synapse')
+        'description' => __('Defaults: Play, Lap.','synapse'),
+        'panel'     => 'synapse_design_panel'
     )
 );
 

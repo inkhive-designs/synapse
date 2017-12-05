@@ -175,7 +175,6 @@ if ( ! function_exists( 'synapse_comment' ) ) :
  * Used as a callback by wp_list_comments() for displaying the comments.
  */
 function synapse_comment( $comment, $args, $depth ) {
-	$GLOBALS['comment'] = $comment;
 
 	if ( 'pingback' == $comment->comment_type || 'trackback' == $comment->comment_type ) : ?>
 

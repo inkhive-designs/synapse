@@ -1,14 +1,7 @@
 <?php
 //Select the Default Theme Skin
 function synapse_customize_register_skins( $wp_customize ) {
-$wp_customize->add_section(
-    'synapse_skin_options',
-    array(
-        'title'     => __('Choose Skin','synapse'),
-        'priority'  => 39,
-    )
-);
-
+    $wp_customize->get_section('colors')->title = __('Theme Skins & Colors', 'synapse');
 $wp_customize->add_setting(
     'synapse_skin',
     array(
@@ -26,7 +19,7 @@ $skins = array( 'default' => __('Default (Red/Yellow/Blue)','synapse'),
 $wp_customize->add_control(
     'synapse_skin',array(
         'settings' => 'synapse_skin',
-        'section'  => 'synapse_skin_options',
+        'section'  => 'colors',
         'type' => 'select',
         'choices' => $skins,
     )

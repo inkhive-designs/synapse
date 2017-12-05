@@ -1,6 +1,9 @@
 <?php
 // Layout and Design
 function synapse_customize_register_layouts( $wp_customize ) {
+    $wp_customize->get_section('background_image')->panel = 'synapse_design_panel';
+    $wp_customize->get_section('custom_css')->panel = 'synapse_design_panel';
+
 $wp_customize->add_panel( 'synapse_design_panel', array(
     'priority'       => 40,
     'capability'     => 'edit_theme_options',
