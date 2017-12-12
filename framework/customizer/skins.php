@@ -2,6 +2,7 @@
 //Select the Default Theme Skin
 function synapse_customize_register_skins( $wp_customize ) {
     $wp_customize->get_section('colors')->title = __('Theme Skins & Colors', 'synapse');
+    $wp_customize->get_section('colors')->panel = 'syanpse_design_panel';
 $wp_customize->add_setting(
     'synapse_skin',
     array(

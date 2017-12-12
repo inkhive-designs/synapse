@@ -5,7 +5,7 @@ $wp_customize->add_section(
     'synapse_sec_upgrade_pro',
     array(
         'title'     => __('-> Upgrade to Synapse Pro','synapse'),
-        'priority'  => 45,
+        'priority'  => 3,
     )
 );
 
@@ -30,7 +30,7 @@ $wp_customize->add_section(
     'synapse_sec_upgrade',
     array(
         'title'     => __('Synapse Theme - Help & Support','synapse'),
-        'priority'  => 45,
+        'priority'  => 4,
     )
 );
 

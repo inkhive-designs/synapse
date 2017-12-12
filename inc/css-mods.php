@@ -38,11 +38,6 @@ function synapse_custom_css_mods() {
 	//Check Jetpack is active
 	if ( class_exists( 'Jetpack' ) && Jetpack::is_module_active( 'infinite-scroll' ) )
 		echo '.pagination { display: none; }';
-
-
-	if ( get_theme_mod('synapse_custom_css') ) :
-		echo  esc_html( get_theme_mod('synapse_custom_css') );
-	endif;
 	
 	
 	if ( get_theme_mod('synapse_hide_title_tagline') ) :

@@ -1,10 +1,18 @@
 ChangeLog
 =========
+
+Version 1.0.8
+
+    i) Sub Menu Hover Issue Fixed
+    ii) Minor Bug Fixes
+
 Version 1.0.7
+
     i) Social Icons Link Issue Resoved
     ii) Minor Bug Fixes
 
 Version 1.0.6
+
     i) File structure switched to new framework.
     ii) Added 4 new social icon styles.
     iii) Added new blog layout called maximum.

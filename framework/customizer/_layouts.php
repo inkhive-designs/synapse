@@ -2,7 +2,6 @@
 // Layout and Design
 function synapse_customize_register_layouts( $wp_customize ) {
     $wp_customize->get_section('background_image')->panel = 'synapse_design_panel';
-    $wp_customize->get_section('custom_css')->panel = 'synapse_design_panel';
 
 $wp_customize->add_panel( 'synapse_design_panel', array(
     'priority'       => 40,
@@ -136,39 +135,6 @@ function synapse_show_sidebar_options($control) {
     $option = $control->manager->get_setting('synapse_disable_sidebar');
     return $option->value() == false ;
 
-}
-
-$wp_customize-> add_section(
-    'synapse_custom_codes',
-    array(
-        'title'			=> __('Custom CSS','synapse'),
-        'description'	=> __('Enter your Custom CSS to Modify design.','synapse'),
-        'priority'		=> 11,
-        'panel'			=> 'synapse_design_panel'
-    )
-);
-
-$wp_customize->add_setting(
-    'synapse_custom_css',
-    array(
-        'default'		=> '',
-        'capability'           => 'edit_theme_options',
-        'sanitize_callback'    => 'wp_filter_nohtml_kses',
-        'sanitize_js_callback' => 'wp_filter_nohtml_kses'
-    )
-);
-
-$wp_customize->add_control(
-    'synapse_custom_css',
-    array(
-        'section' => 'synapse_custom_codes',
-        'settings' => 'synapse_custom_css',
-        'type' => 'textarea'
-    )
-);
-
-function synapse_sanitize_text( $input ) {
-    return wp_kses_post( force_balance_tags( $input ) );
 }
 
 $wp_customize-> add_section(
