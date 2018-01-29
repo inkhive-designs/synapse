@@ -1,5 +1,9 @@
 ChangeLog
 =========
+Version: 1.0.9
+
+    i) Social icons bug fixed on mobile screens.
+    ii) Minor bug fixes.
 
 Version 1.0.8
 
