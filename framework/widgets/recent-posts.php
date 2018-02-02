@@ -49,11 +49,11 @@ class synapse_Recent_Posts extends WP_Widget {
          		 
 		         <li class='rp-item'>
 		         <?php if( has_post_thumbnail() ) : ?>
-		         <div class='rp-thumb'><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail'); ?></a></div>
+		         <div class='rp-thumb'><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail',array(  'alt' => get_the_title())); ?></a></div>
 		         <?php 
 		         else :
 		         ?>
-		         <div class='rp-thumb'><a href="<?php the_permalink(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/nthumb.png"></a></div>
+		         <div class='rp-thumb'><a href="<?php the_permalink(); ?>"><img alt="<?php the_title() ?>" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/nthumb.png"></a></div>
 		         <?php
 		         endif; ?>	
 		         <div class='rp-title'><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
@@ -65,7 +65,7 @@ class synapse_Recent_Posts extends WP_Widget {
 		   else: 
 		?>
 		
-		      <?php _e('Oops, there are no posts.','synapse') ?>
+		      <?php esc_html_e('Oops, there are no posts.','synapse') ?>
 		
 		<?php
 		   endif;
@@ -91,10 +91,10 @@ class synapse_Recent_Posts extends WP_Widget {
 		}
 		?>
 		<p>
-		<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:','synapse' ); ?></label> 
+		<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php esc_html_e( 'Title:','synapse' ); ?></label>
 		<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" />
 		
-		<label for="<?php echo $this->get_field_id( 'no_of_posts' ); ?>"><?php _e( 'No. of Posts:', 'synapse' ); ?></label>
+		<label for="<?php echo $this->get_field_id( 'no_of_posts' ); ?>"><?php esc_html_e( 'No. of Posts:', 'synapse' ); ?></label>
 		<input class="widefat" id="<?php echo $this->get_field_id( 'no_of_posts' ); ?>" name="<?php echo $this->get_field_name( 'no_of_posts' ); ?>" type="text" value="<?php echo esc_attr( $no_of_posts ); ?>" />
 		</p>
 		<?php 

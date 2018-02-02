@@ -3,6 +3,10 @@
   margin-top: 0;
   overflow: hidden;
   padding: 0 7px;
+  @media screen and (max-width: 767px) {
+    width: 100% !important;
+    height: auto !important;
+  }
   .featured-thumb {
     border-top: none;
     z-index: 10;
@@ -50,21 +54,24 @@
     bottom: 0px;
     width: 100%;
     .transform(translateY(4px) scale(1.1));
-    @media screen and (min-width: 767px) {
+    @media screen and (min-width: 768px) {
       opacity: 0;
     }
     .transition(0.6s all ease-in);
     transform-origin: center;
-    h1 {
+    h2 {
       width: 100%;
       margin: 0;
     }
-    h1 a {
+    h2 a {
       color: fade(black,99%);
       padding: 10px 30px;
       padding-top: 8px;
       width: 100%;
       font-size: 18px;
+      @media screen and (max-width: 768px) {
+        font-size: 14px;
+      }
       background: fade(white, 100%);
       display: inline-block;
       font-weight: normal;
@@ -72,13 +79,13 @@
       text-align: center;
     }
   }
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 768px) {
     &:hover {
       .out-thumb {
         .transform(translateY(-20px) scale(1.1) rotate(-2deg));
         .transition(0.6s all ease-out);
         opacity: 1;
-        h1 a {
+        h2 a {
         }
       }
       img {

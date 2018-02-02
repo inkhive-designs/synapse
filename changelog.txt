@@ -1,5 +1,13 @@
 ChangeLog
-=========
+========
+Version 1.1.0
+    i) Added Custom logo.
+    ii) Social icons bug fixed.
+    v) Post Slider Bug fixed.
+    vi) Custom skins and colors major bug fixed.
+    vii) All blog layout bug fixed.
+    viii) Minimize customizer.
+
 Version: 1.0.9
 
     i) Social icons bug fixed on mobile screens.

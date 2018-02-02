@@ -32,8 +32,8 @@ function synapse_custom_css_mods() {
 	endif;
 	
 	
-	if ( get_theme_mod('synapse_header_desccolor','#AAAAAA') ) :
-		echo ".site-description { color: ".esc_html( get_theme_mod('synapse_header_desccolor','#777777') )."; }";
+	if ( get_theme_mod('synapse_header_desccolor','#aaa') ) :
+		echo ".site-description { color: ".esc_html( get_theme_mod('synapse_header_desccolor','#aaa') )."; }";
 	endif;
 	//Check Jetpack is active
 	if ( class_exists( 'Jetpack' ) && Jetpack::is_module_active( 'infinite-scroll' ) )

@@ -180,7 +180,7 @@ function synapse_comment( $comment, $args, $depth ) {
 
 	<li id="comment-<?php comment_ID(); ?>" <?php comment_class(); ?>>
 		<div class="comment-body">
-			<?php _e( 'Pingback:', 'synapse' ); ?> <?php comment_author_link(); ?> <?php edit_comment_link( __( 'Edit', 'synapse' ), '<span class="edit-link">', '</span>' ); ?>
+			<?php esc_html_e( 'Pingback:', 'synapse' ); ?> <?php comment_author_link(); ?> <?php edit_comment_link( __( 'Edit', 'synapse' ), '<span class="edit-link">', '</span>' ); ?>
 		</div>
 
 	<?php else : ?>
@@ -201,7 +201,7 @@ function synapse_comment( $comment, $args, $depth ) {
 				</div><!-- .comment-metadata -->
 
 				<?php if ( '0' == $comment->comment_approved ) : ?>
-				<p class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'synapse' ); ?></p>
+				<p class="comment-awaiting-moderation"><?php esc_html_e( 'Your comment is awaiting moderation.', 'synapse' ); ?></p>
 				<?php endif; ?>
 			</footer><!-- .comment-meta -->
 

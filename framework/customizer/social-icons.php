@@ -4,6 +4,8 @@ function synapse_customize_register_social( $wp_customize ) {
 $wp_customize->add_section('synapse_social_section', array(
     'title' => __('Social Icons','synapse'),
     'priority' => 44 ,
+    'panel' => 'synapse_header_panel'
+
 ));
 //social icons style
     $social_style = array(

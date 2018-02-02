@@ -7,8 +7,10 @@
       padding: 19px 10px;
       display: inline-block;
       font-size: 22px;
-      @media screen and (max-width: 991px) {
-        font-size: 16px;
+      @media screen and (max-width: 767px){
+        padding: 22px 6px;
+        font-size: 18px;
+        float: none;
       }
       color: @onaccent;
       i {
@@ -28,8 +30,7 @@
     }
     @media screen and (max-width: 767px) {
       width: 100%;
-      text-align: left;
-      float: left;
+      text-align: center;
     }
     .style2 {
       &:hover {
@@ -49,6 +50,10 @@
         content: '';
         height: 48px;
         width: 48px;
+        @media screen and (max-width: 767px) {
+          height: 34px;
+          width: 34px;
+        }
         position: absolute;
         background: transparent;
         border: solid 2px @onaccent;
@@ -85,10 +90,14 @@
         content: '';
         height: 48px;
         width: 48px;
+        @media screen and (max-width: 767px) {
+          height: 34px;
+          width: 34px;
+        }
         position: absolute;
         background: transparent;
         //border: solid 2px @onaccent;
-       // border-radius: 50%;
+        // border-radius: 50%;
         top: 0;
         left: 0;
         bottom: 0;
@@ -101,7 +110,7 @@
           transform: scale(1.5, 1.5);
           opacity: 0;
           border: solid 2px @onaccent;
-           border-radius: 50%;
+          border-radius: 50%;
 
           -webkit-animation-name: spin;
           -webkit-animation-duration: 400ms;

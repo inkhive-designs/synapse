@@ -135,7 +135,7 @@ add_filter( 'woocommerce_add_to_cart_fragments', 'synapse_header_add_to_cart_fra
 function synapse_header_add_to_cart_fragment( $fragments ) {
 	ob_start();
 	?>
-			<a class="cart-contents" href="<?php echo WC()->cart->get_cart_url(); ?>" title="<?php _e('View your shopping cart', 'synapse'); ?>">
+			<a class="cart-contents" href="<?php echo WC()->cart->get_cart_url(); ?>" title="<?php esc_html_e('View your shopping cart', 'synapse'); ?>">
 						<div class="count"><?php echo sprintf(_n('%d item', '%d items', WC()->cart->cart_contents_count, 'synapse'), WC()->cart->cart_contents_count);?></div>
 						<div class="total"> <?php echo WC()->cart->get_cart_total(); ?>
 						</div>
