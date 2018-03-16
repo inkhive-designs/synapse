@@ -16,7 +16,7 @@
 
 		<div class="out-thumb col-md-12">
 			<header class="entry-header">
-				<h2 class="entry-title title-font"><a class="hvr-underline-reveal" href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
+				<h2 class="entry-title title-font"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 				<div class="postedon"><?php synapse_posted_on(); ?></div>
 				<span class="entry-excerpt"><?php echo substr(get_the_excerpt(),0,200).(get_the_excerpt() ? "..." : "" ); ?></span>
 				<span class="readmore"><a class="hvr-underline-from-center" href="<?php the_permalink() ?>"><?php esc_html_e('Read More','synapse'); ?></a></span>

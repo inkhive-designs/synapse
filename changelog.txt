@@ -1,5 +1,9 @@
 ChangeLog
 ========
+Version: 1.1.2
+	
+	i) Blog layout minor bug fixed.
+
 Version: 1.1.1
 
     i) Woocommerce CSS Bug fixed.
