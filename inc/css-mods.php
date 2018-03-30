@@ -20,11 +20,11 @@ function synapse_custom_css_mods() {
 	endif;	
 	
 	if ( get_theme_mod('synapse_title_font') ) :
-		echo ".title-font, h1, h2, .section-title, .woocommerce ul.products li.product h3, #site-navigation { font-family: ".esc_html( get_theme_mod('synapse_title_font','Open Sans') )."; }";
+		echo ".title-font, h1, h2, .section-title, .woocommerce ul.products li.product h3, #site-navigation { font-family: ".esc_html( get_theme_mod('synapse_title_font','Play') )."; }";
 	endif;
 	
 	if ( get_theme_mod('synapse_body_font') ) :
-		echo "body { font-family: ".esc_html( get_theme_mod('synapse_body_font','Open Sans') )."; }";
+		echo "body { font-family: ".esc_html( get_theme_mod('synapse_body_font','Lato') )."; }";
 	endif;
 	
 	if ( get_theme_mod('synapse_site_titlecolor') ) :

@@ -25,50 +25,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="custom.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/custom.js">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="changelog.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/changelog.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
-              <caret line="137" column="17" selection-start-line="137" selection-start-column="17" selection-end-line="137" selection-end-column="17" />
+              <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="register_styles.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/framework/admin_modules/register_styles.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="25" column="173" selection-start-line="25" selection-start-column="173" selection-end-line="25" selection-end-column="173" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="universal.less" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/theme-styles/sections/universal.less">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="_init_sections.less" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/theme-styles/sections/_init_sections.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="variables.less" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/assets/theme-styles/variables.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="404.less" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/theme-styles/sections/404.less">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -83,8 +55,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>grid</find>
-      <find>content</find>
       <find>#slider-feat_posts</find>
       <find>fonts</find>
       <find>layout</find>
@@ -113,6 +83,8 @@
       <find>custom_css</find>
       <find>synapse_header_desccolor</find>
       <find>synapse_skin</find>
+      <find>$content</find>
+      <find>swiper</find>
     </findStrings>
     <replaceStrings>
       <replace>val</replace>
@@ -126,10 +98,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/framework/layouts/content-maxime.php" />
-        <option value="$PROJECT_DIR$/assets/theme-styles/blog-layouts/_init_blog_layouts.less" />
-        <option value="$PROJECT_DIR$/modules/social/social-fa.php" />
-        <option value="$PROJECT_DIR$/inc/extras.php" />
         <option value="$PROJECT_DIR$/framework/customizer/_googlefonts.php" />
         <option value="$PROJECT_DIR$/framework/customizer/_layouts.php" />
         <option value="$PROJECT_DIR$/framework/admin_modules/theme_setup.php" />
@@ -143,7 +111,6 @@
         <option value="$PROJECT_DIR$/assets/theme-styles/sections/social-icons.less" />
         <option value="$PROJECT_DIR$/framework/layouts/content-grid.php" />
         <option value="$PROJECT_DIR$/assets/theme-styles/blog-layouts/grid-layouts.less" />
-        <option value="$PROJECT_DIR$/assets/theme-styles/variables.less" />
         <option value="$PROJECT_DIR$/framework/layouts/content-grid_2_column.php" />
         <option value="$PROJECT_DIR$/framework/layouts/content-synapse.php" />
         <option value="$PROJECT_DIR$/assets/theme-styles/blog-layouts/synapse-layout.less" />
@@ -153,30 +120,35 @@
         <option value="$PROJECT_DIR$/framework/customizer/header.php" />
         <option value="$PROJECT_DIR$/framework/customizer/social-icons.php" />
         <option value="$PROJECT_DIR$/framework/customizer/misc-scripts.php" />
-        <option value="$PROJECT_DIR$/inc/css-mods.php" />
         <option value="$PROJECT_DIR$/assets/theme-styles/sections/header.less" />
         <option value="$PROJECT_DIR$/framework/admin_modules/register_widgets.php" />
-        <option value="$PROJECT_DIR$/assets/theme-styles/sections/footer.less" />
         <option value="$PROJECT_DIR$/assets/theme-styles/sections/sidebar.less" />
         <option value="$PROJECT_DIR$/404.php" />
         <option value="$PROJECT_DIR$/framework/widgets/recent-posts.php" />
         <option value="$PROJECT_DIR$/framework/woocommerce.php" />
-        <option value="$PROJECT_DIR$/header.php" />
         <option value="$PROJECT_DIR$/inc/template-tags.php" />
         <option value="$PROJECT_DIR$/modules/content/content-none.php" />
         <option value="$PROJECT_DIR$/modules/header/top-bar.php" />
         <option value="$PROJECT_DIR$/comments.php" />
         <option value="$PROJECT_DIR$/assets/theme-styles/skins/default.less" />
-        <option value="$PROJECT_DIR$/style.css" />
-        <option value="$PROJECT_DIR$/changelog.txt" />
         <option value="$PROJECT_DIR$/_hello.php" />
         <option value="$PROJECT_DIR$/framework/customizer/skins.php" />
         <option value="$PROJECT_DIR$/assets/theme-styles/featured-components/fposts-slider.less" />
         <option value="$PROJECT_DIR$/slider-swiper.php" />
         <option value="$PROJECT_DIR$/assets/theme-styles/_init.less" />
-        <option value="$PROJECT_DIR$/js/custom.js" />
-        <option value="$PROJECT_DIR$/framework/admin_modules/register_styles.php" />
         <option value="$PROJECT_DIR$/assets/theme-styles/sections/_init_sections.less" />
+        <option value="$PROJECT_DIR$/assets/theme-styles/functions.less" />
+        <option value="$PROJECT_DIR$/assets/theme-styles/featured-components/slider.less" />
+        <option value="$PROJECT_DIR$/js/custom.js" />
+        <option value="$PROJECT_DIR$/assets/theme-styles/featured-components/_init_featured_components.less" />
+        <option value="$PROJECT_DIR$/framework/admin_modules/register_styles.php" />
+        <option value="$PROJECT_DIR$/assets/theme-styles/variables.less" />
+        <option value="$PROJECT_DIR$/sidebar-footer.php" />
+        <option value="$PROJECT_DIR$/header.php" />
+        <option value="$PROJECT_DIR$/assets/theme-styles/sections/footer.less" />
+        <option value="$PROJECT_DIR$/inc/css-mods.php" />
+        <option value="$PROJECT_DIR$/style.css" />
+        <option value="$PROJECT_DIR$/changelog.txt" />
       </list>
     </option>
   </component>
@@ -204,31 +176,6 @@
               <item name="synapse" type="b2602c69:ProjectViewProjectNode" />
               <item name="synapse" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
-            <path>
-              <item name="synapse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="synapse" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="synapse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="synapse" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="theme-styles" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="synapse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="synapse" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="theme-styles" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="blog-layouts" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="synapse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="synapse" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="theme-styles" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="sections" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -237,13 +184,14 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="list.type.of.created.stylesheet" value="Less" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="Less" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\theme-development\wp-content\themes\synapse\assets\theme-styles\css" />
       <recent name="C:\xampp\htdocs\theme-development\wp-content\themes\synapse\modules\social" />
       <recent name="C:\xampp\htdocs\theme-development\wp-content\themes\synapse\modules\content" />
       <recent name="C:\xampp\htdocs\theme-development\wp-content\themes\synapse\assets\theme-styles\skins" />
@@ -339,12 +287,12 @@
       <workItem from="1517200212663" duration="63000" />
       <workItem from="1517547384126" duration="11603000" />
       <workItem from="1518068395095" duration="315000" />
-      <workItem from="1522387868940" duration="2635000" />
+      <workItem from="1522387868940" duration="13547000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63800000" />
+    <option name="totallyTimeSpent" value="74712000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
@@ -353,7 +301,7 @@
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24743778" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32913387" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -410,83 +358,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/framework/customizer/social-icons.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework/customizer/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework/customizer/misc-scripts.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inc/css-mods.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="34" column="48" selection-start-line="34" selection-start-column="48" selection-end-line="34" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/theme-styles/sections/header.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="200" column="21" selection-start-line="200" selection-start-column="21" selection-end-line="200" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework/customizer/_init.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="549">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/slider-feat_posts.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="35" column="32" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/theme-styles/sections/sidebar.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="161" column="26" selection-start-line="161" selection-start-column="26" selection-end-line="161" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/theme-styles/sections/footer.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework/admin_modules/register_widgets.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework/layouts/content-grid.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/framework/admin_modules/theme_setup.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="183">
@@ -574,13 +445,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="13" column="74" selection-start-line="13" selection-start-column="74" selection-end-line="13" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/inc/template-tags.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="193">
@@ -605,37 +469,9 @@
     <entry file="file://$PROJECT_DIR$/screenshot.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_hello.php" />
-    <entry file="file://$PROJECT_DIR$/changelog.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/theme-styles/skins/default.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/theme-styles/blog-layouts/_init_blog_layouts.less">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/slider-swiper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="46" column="9" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/theme-styles/skins/brown.less">
       <provider selected="true" editor-type-id="text-editor">
@@ -644,41 +480,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/theme-styles/featured-components/_init_featured_components.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="17" lean-forward="true" selection-start-column="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework/customizer/skins.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="70" column="57" selection-start-line="70" selection-start-column="57" selection-end-line="70" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/swiper.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/theme-styles/featured-components/slider.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="18" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/framework/customizer/fposts-slider.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-306" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/theme-styles/_init.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/assets/theme-styles/sections/404.less">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/theme-styles/skins/green.less">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/theme-styles/skins/red.less">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/functions.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -687,37 +501,167 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/swiper.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="13" lean-forward="true" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/theme-styles/skins/default.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="25" lean-forward="true" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/theme-styles/blog-layouts/grid-layouts.less">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/theme-styles/functions.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="31" lean-forward="true" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/custom.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="137" column="17" selection-start-line="137" selection-start-column="17" selection-end-line="137" selection-end-column="17" />
+        <state relative-caret-position="2244">
+          <caret line="144" selection-start-line="144" selection-end-line="156" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/framework/admin_modules/register_styles.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
-          <caret line="25" column="173" selection-start-line="25" selection-start-column="173" selection-end-line="25" selection-end-column="173" />
+          <caret line="25" column="156" selection-start-line="25" selection-start-column="156" selection-end-line="25" selection-end-column="156" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/theme-styles/featured-components/_init_featured_components.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="17" lean-forward="true" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/slider-swiper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="46" column="9" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/theme-styles/featured-components/slider.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="28" column="16" lean-forward="true" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/theme-styles/sections/universal.less">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="19" lean-forward="true" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/theme-styles/sections/404.less">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/assets/theme-styles/_init.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/admin_modules/register_widgets.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/theme-styles/sections/footer.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="27" lean-forward="true" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sidebar-footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="28" column="16" lean-forward="true" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/theme-styles/sections/_init_sections.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+          <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/theme-styles/variables.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        <state relative-caret-position="85">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/customizer/skins.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/customizer/_init.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="549">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/css-mods.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="27" column="10" lean-forward="true" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/customizer/_googlefonts.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="43" column="29" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/changelog.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
         </state>
       </provider>
     </entry>

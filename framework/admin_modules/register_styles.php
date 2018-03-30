@@ -23,7 +23,7 @@ function synapse_scripts() {
 
     wp_enqueue_style( 'swiper', get_template_directory_uri() . '/assets/css/swiper.min.css' );
 
-    wp_enqueue_style( 'synapse-main-theme-style', get_template_directory_uri() . '/assets/theme-styles/css/'.get_theme_mod('synapse_skin', 'default').'.css',array(),54465465 );
+    wp_enqueue_style( 'synapse-main-theme-style', get_template_directory_uri() . '/assets/theme-styles/css/'.get_theme_mod('synapse_skin', 'default').'.css' );
 
     wp_enqueue_script( 'synapse-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 

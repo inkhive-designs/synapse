@@ -1,5 +1,11 @@
 ChangeLog
 ========
+Version: 1.1.3
+
+    i) Slider bug fixed.
+    ii) Google fonts issue fixed.
+    iii) Minor CSS bug fixed.
+
 Version: 1.1.2
 	
 	i) Blog layout minor bug fixed.

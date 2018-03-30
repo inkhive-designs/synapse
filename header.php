@@ -25,5 +25,5 @@
 	<?php if( class_exists('rt_slider') ) {
 		 rt_slider::render('slider', 'swiper' ); 
 	} ?>
-	
-		<div id="content" class="site-content">
+
+        <div id="content" class="site-content">
