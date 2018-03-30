@@ -36,7 +36,7 @@ function synapse_customize_register_skins( $wp_customize ) {
 
     $wp_customize->add_control(new WP_Customize_Color_Control(
             $wp_customize,
-            'synapse_header_desccolor', array(
+            'synapse_skin', array(
             'label' => __('Site Tagline Color','synapse'),
             'section' => 'synapse_skin_options',
             'settings' => 'synapse_header_desccolor',
@@ -68,7 +68,7 @@ $wp_customize->add_control(
 );
 
 function synapse_sanitize_skin( $input ) {
-    if ( in_array($input, array('default','orange','brown','green','grayscale','red') ) )
+    if ( in_array($input, array('default','brown','green','red') ) )
         return $input;
     else
         return '';
