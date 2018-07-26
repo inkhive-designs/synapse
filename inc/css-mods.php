@@ -58,7 +58,7 @@ function synapse_custom_css_mods() {
             echo "#primary-mono .entry-content{ font-size:16px;}";
         elseif ($val=='large'):
             echo "#primary-mono .entry-content{ font-size:18px;}";
-        elseif ($val=='extra-large'):
+        elseif ($val=='x-large'):
             echo "#primary-mono .entry-content{ font-size:20px;}";
         endif;
     else:
@@ -69,7 +69,7 @@ function synapse_custom_css_mods() {
     if(get_theme_mod('synapse_content_site_title_fontsize_set')):
         $val = get_theme_mod('synapse_content_site_title_fontsize_set');
         if($val != 'default'):
-            echo ".site-branding .site-title {font-size:".$val."px !important;}";
+            echo ".site-branding .site-title {font-size:".$val."px;}";
         else:
             echo ".site-branding .site-title {font-size:50"."px;}";
         endif;
@@ -80,7 +80,7 @@ function synapse_custom_css_mods() {
     if(get_theme_mod('synapse_content_site_desc_fontsize_set')):
         $val=get_theme_mod('synapse_content_site_desc_fontsize_set');
         if($val != 'default'):
-            echo ".site-branding .site-description{font-size:".$val."px !important;}";
+            echo ".site-branding .site-description{font-size:".$val."px;}";
         else:
             echo ".site-branding .site-description {font-size:15"."px;}";
         endif;

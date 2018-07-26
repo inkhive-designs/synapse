@@ -12,7 +12,10 @@ $wp_customize->add_section(
 
 $wp_customize->add_setting(
     'synapse_feat_post_slider_enable',
-    array( 'sanitize_callback' => 'synapse_sanitize_checkbox' )
+    array(
+        'sanitize_callback' => 'synapse_sanitize_checkbox',
+        'transport'     => 'postMessage',
+    )
 );
 
 $wp_customize->add_control(

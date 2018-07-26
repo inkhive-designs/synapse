@@ -1,69 +1,75 @@
 <?php
 //Fonts
 function synapse_customize_register_fonts( $wp_customize ) {
-$wp_customize->add_section(
-    'synapse_typo_options',
-    array(
-        'title'     => __('Google Web Fonts','synapse'),
-        'priority'  => 41,
-        'description' => __('Defaults: Play, Lap.','synapse'),
-        'panel'     => 'synapse_design_panel'
-    )
-);
+    $wp_customize->add_section(
+        'synapse_typo_options',
+        array(
+            'title'     => __('Google Web Fonts','synapse'),
+            'priority'  => 41,
+            'description' => __('Defaults: Play, Lap.','synapse'),
+            'panel'     => 'synapse_design_panel'
+        )
+    );
 
-$font_array = array('Play','Open Sans','Droid Sans','Lato','Droid Serif','Roboto');
-$fonts = array_combine($font_array, $font_array);
+    $font_array = array('Play','Open Sans','Droid Sans','Lato','Droid Serif','Roboto');
+    $fonts = array_combine($font_array, $font_array);
 
-$wp_customize->add_setting(
-    'synapse_title_font',
-    array(
-        'default'=> 'Play',
-        'sanitize_callback' => 'synapse_sanitize_gfont'
-    )
-);
+    $wp_customize->add_setting(
+        'synapse_title_font',
+        array(
+            'default'=> 'Play',
+            'sanitize_callback' => 'synapse_sanitize_gfont',
+            'transport'     => 'postMessage'
+        )
+    );
 
-function synapse_sanitize_gfont( $input ) {
-    if ( in_array($input, array('Play','Open Sans','Droid Sans','Lato','Droid Serif','Roboto') ) )
-        return $input;
-    else
-        return '';
-}
+    function synapse_sanitize_gfont( $input ) {
+        if ( in_array($input, array('Play','Open Sans','Droid Sans','Lato','Droid Serif','Roboto') ) )
+            return $input;
+        else
+            return '';
+    }
 
-$wp_customize->add_control(
-    'synapse_title_font',array(
-        'label' => __('Title','synapse'),
-        'settings' => 'synapse_title_font',
-        'section'  => 'synapse_typo_options',
-        'type' => 'select',
-        'choices' => $fonts,
-    )
-);
+    $wp_customize->add_control(
+        'synapse_title_font',array(
+            'label' => __('Title','synapse'),
+            'settings' => 'synapse_title_font',
+            'section'  => 'synapse_typo_options',
+            'type' => 'select',
+            'choices' => $fonts,
+        )
+    );
 
-$wp_customize->add_setting(
-    'synapse_body_font',
-    array(	'default'=> 'Lato',
-        'sanitize_callback' => 'synapse_sanitize_gfont' )
-);
+    $wp_customize->add_setting(
+        'synapse_body_font',
+        array(	'default'=> 'Lato',
+            'sanitize_callback' => 'synapse_sanitize_gfont',
+            'transport'     => 'postMessage'
+        )
+    );
 
-$wp_customize->add_control(
-    'synapse_body_font',array(
-        'label' => __('Body','synapse'),
-        'settings' => 'synapse_body_font',
-        'section'  => 'synapse_typo_options',
-        'type' => 'select',
-        'choices' => $fonts
-    )
-);
-//Page and Post content Font size start
+    $wp_customize->add_control(
+        'synapse_body_font',array(
+            'label' => __('Body','synapse'),
+            'settings' => 'synapse_body_font',
+            'section'  => 'synapse_typo_options',
+            'type' => 'select',
+            'choices' => $fonts
+        )
+    );
+
+    //Page and Post content Font size start
     $wp_customize->add_setting(
         'synapse_content_page_post_fontsize_set',
         array(
-            'default' => 'default',
-            'sanitize_callback' => 'synapse_sanitize_content_size'
+            'default' => '15px',
+            'sanitize_callback' => 'synapse_sanitize_content_size',
+            'transport' => 'postMessage'
         )
     );
+
     function synapse_sanitize_content_size( $input ) {
-        if ( in_array($input, array('default','small','medium','large','extra-large') ) )
+        if ( in_array($input, array('15px','small','medium','large','x-large') ) )
             return $input;
         else
             return '';
@@ -77,22 +83,23 @@ $wp_customize->add_control(
             'section'  => 'synapse_typo_options',
             'type'     => 'select',
             'choices' => array(
-                'default'   => 'Default',
+                '15px'   => 'Default',
                 'small' => 'Small',
                 'medium'   => 'Medium',
                 'large'  => 'Large',
-                'extra-large' => 'Extra Large',
+                'x-large' => 'Extra Large',
             ),
         )
     );
-
     //Page and Post content Font size end
+
     //site title Font size start
     $wp_customize->add_setting(
         'synapse_content_site_title_fontsize_set',
         array(
             'default' => '50',
             'sanitize_callback' => 'absint',
+            'transport' => 'postMessage',
         )
     );
 
@@ -113,6 +120,7 @@ $wp_customize->add_control(
         array(
             'default' => '15',
             'sanitize_callback' => 'absint',
+            'transport'     => 'postMessage'
         )
     );
 
