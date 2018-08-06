@@ -43,11 +43,6 @@ function synapse_custom_css_mods() {
 	if ( get_theme_mod('synapse_hide_title_tagline') ) :
 		echo "#masthead .site-branding #text-title-desc { display: none; }";
 	endif;
-	
-	if ( get_theme_mod('synapse_logo_resize') ) :
-		$val = esc_html( get_theme_mod('synapse_logo_resize') )/100;
-		echo "#masthead .custom-logo { transform: scale(".$val."); -webkit-transform: scale(".$val."); -moz-transform: scale(".$val."); -ms-transform: scale(".$val."); }";
-		endif;
 
     // page & post fontsize
     if(get_theme_mod('synapse_content_page_post_fontsize_set')):

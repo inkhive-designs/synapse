@@ -103,12 +103,13 @@ function synapse_customize_register_layouts( $wp_customize ) {
         )
     );
 
-
     $wp_customize->add_setting(
         'synapse_sidebar_width',
         array(
             'default' => 4,
-            'sanitize_callback' => 'synapse_sanitize_positive_number' )
+            'sanitize_callback' => 'synapse_sanitize_positive_number',
+            'transport'     => 'postMessage',
+        )
     );
 
     $wp_customize->add_control(
@@ -142,7 +143,6 @@ function synapse_customize_register_layouts( $wp_customize ) {
         'synapse_custom_footer',
         array(
             'title'			=> __('Footer Settings','synapse'),
-            'description'	=> __('Enter your Own Copyright Text.','synapse'),
             'priority'		=> 11,
             'panel'			=> 'synapse_design_panel'
         )
@@ -179,6 +179,7 @@ function synapse_customize_register_layouts( $wp_customize ) {
         'synapse_footer_text',
         array(
             'section' => 'synapse_custom_footer',
+            'label'	=> __('Enter your Own Copyright Text.','synapse'),
             'settings' => 'synapse_footer_text',
             'type' => 'text'
         )
