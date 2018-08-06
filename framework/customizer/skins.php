@@ -85,7 +85,7 @@ function synapse_customize_register_skins( $wp_customize ) {
     $wp_customize->add_setting(
         'synapse_skins',
         array(
-            'default'	=> 'ryb',
+            'default'	=> 'default',
             'sanitize_callback' => 'synapse_sanitize_skin',
             'transport'	=> 'refresh'
         )

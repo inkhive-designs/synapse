@@ -33,23 +33,16 @@ Important Links
 /*-------------
 Skins
  --------------*/
-.synapse-skin-list li.color-boxes {
-	display: inline-block;
-    background: url('../../images/');
-	margin-right: 6px;
-	border: 4px solid transparent;
-}
-
-.synapse-skin-list li.skin-active {
-	border: 4px solid #FFF;
-}
-
-.synapse-skin-list li:hover {
-	border: 4px solid #FFF;;
-}
 
 .customize-control-skins {
 	.custom_skin_control {
 		display: none;
+	}
+	img {
+		margin-bottom: 10px;
+	}
+	input[type=radio]:checked + img  {
+		border: solid 1px #5b9dd9;
+		box-shadow: 0 0 2px rgba(30,140,190,.8);
 	}
 }
