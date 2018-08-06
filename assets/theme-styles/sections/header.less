@@ -6,6 +6,7 @@
   @media screen and (max-width: 767px) {
     padding-bottom: 10px;
   }
+
   .container {
     @media screen and (max-width: 991px) {
       text-align: center;
@@ -47,6 +48,7 @@
     }
   }
 
+
   #woocommerce-zone {
     float: right;
     padding: 0px 2px;
@@ -72,6 +74,7 @@
         }
       }
     }
+
 
     #top-cart {
       display: inline-block;
@@ -146,9 +149,9 @@
         color: @content;
       }
     }
+
   }
 }
-
 #masthead {
   text-align: center;
   background: @outerbg;
@@ -157,118 +160,260 @@
   z-index: 103;
   position: relative;
   padding-top: 20px;
-  .site-branding {
-    padding: 0px 0;
-    padding-top: 14px;
-    position: relative;
-    top: 0px;
-    overflow: hidden;
-    display: inline-block;
-    float: none;
-    width: 100%;
-    text-align: center;
-    @media screen and (max-width: 767px) {
-      padding: 14px 0;
-      width: 100%;
-      text-align: center;
-    }
-    //logo
-    .site-logo {
-      display: inline-block;
+  #text-title-desc {
+    clear: none;
+    @media screen and (max-width: 991px) {
       float: none;
-      width: 200px;
-      height: auto;
-      text-align: center;
-      margin-bottom: 22px;
-      @media screen and (max-width: 767px) {
-        float: none;
-        max-width: 40px;
-        max-height: 40px;
-        margin-bottom: 10px;
-        display: inline-block;
-      }
-      @media screen and (min-width: 768px) and (max-width: 991px) {
-        float: none;
-        max-width: 60px;
-        max-height: 60px;
-        display: inline-block;
-      }
     }
-    #text-title-desc {
-      clear: none;
-      @media screen and (max-width: 991px) {
-        float: none;
-      }
-      @media screen and (max-width: 768px) {
-        float: none;
-      }
-      vertical-align: middle;
-      h1.site-title {
-        font-size: 50px;
-        margin-bottom: 5px;
-        @media screen and (max-width: 600px) {
-          font-size: 32px;
-          margin-top: 20px;
-        }
-        font-weight: bolder;
-        letter-spacing: 1px;
-        margin-top: 0px;
-        padding: 0 5px;
-        .transition(3s all ease);
-      }
-      h3.site-description {
-        font-weight: 300;
-        font-size: 15px;
-        margin-top: 0px;
-        //  color: #aaa;
-        .transition(3s all ease);
-        font-weight: normal;
-      }
-      @media screen and (min-width: 767px) {
-        #text-title-desc:hover {
-          h1.site-title {
-            .transform(scale(1.2) translateY(-5px));
-          }
-          h3.site-description {
-            .transform(scale(1.05) translateY(3px));
-          }
-        }
-      }
+    @media screen and (max-width: 768px) {
+      float: none;
+    }
+    vertical-align: middle;
+
+  }
+
+  h1.site-title {
+    font-size: 50px;
+    margin-bottom: 5px;
+    @media screen and (max-width: 600px) {
+      font-size: 32px;
+      margin-top: 20px;
+    }
+    font-weight: bolder;
+    letter-spacing: 1px;
+    margin-top: 0px;
+    padding: 0 5px;
+    .transition(3s all ease);
+    a {
+      color: white;
     }
   }
-  @media screen and (max-width: 991px) {
-    .masthead-container {
-      text-align: center;
+  h3.site-description {
+    font-weight: 300;
+    font-size: 15px;
+    margin-top: 0px;
+  //  color: #aaa;
+    .transition(3s all ease);
+    font-weight: normal;
+  }
+  @media screen and (min-width: 767px) {
+    #text-title-desc:hover {
+      h1.site-title {
+        .transform(scale(1.2) translateY(-5px));
+      }
+      h3.site-description {
+        .transform(scale(1.05) translateY(3px));
+      }
     }
   }
   .masthead-container {
     padding-right: 5px;
     padding-left: 5px;
     padding-bottom: 0px;
+
   }
-  #bar {
-    margin-top: 45px;
-    background: fade(@t-accent, 100%);
-    border-right: 15px solid @outerbg;
-    border-left: 15px solid @outerbg;
-    padding: 0;
-    #searchicon {
-      float: right;
-      padding: 19px 18px;
-      font-size: 22px;
-      overflow: visible;
-      background: @s-accent;
-      cursor: pointer;
-      .transition(0.2s all ease);
-      color: @onaccent;
-      &:hover {
-        .transform(scale(1.1));
-        transform-origin: bottom;
-      }
-      @media screen and (max-width: 767px) {
-        position: absolute;
-        right: 15px;
-      }
+  #searchicon {
+    float: right;
+    padding: 19px 18px;
+    font-size: 22px;
+    overflow: visible;
+    background: @s-accent;
+    cursor: pointer;
+    .transition(0.2s all ease);
+    color: @onaccent;
+    &:hover {
+      .transform(scale(1.1));
+      transform-origin: bottom;
     }
+    @media screen and (max-width: 767px) {
+      position: absolute;
+      right: 15px;
+    }
+  }
+}
+.site-branding {
+  padding: 0px 0;
+  padding-top: 14px;
+  position: relative;
+  top: 0px;
+  overflow: hidden;
+  display: inline-block;
+  float: none;
+  width: 100%;
+  text-align: center;
+  @media screen and (max-width: 767px) {
+    padding: 14px 0;
+    width: 100%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 991px) {
+  .masthead-container {
+    text-align: center;
+  }
+}
+
+#top-search {
+  display: inline-block;
+  float: right;
+  @media screen and (max-width: 991px) {
+    float: none;
+  }
+  padding: 15px 25px;
+  padding-right: 0;
+  margin-left: 5px;
+  padding-left: 5px;
+  label {
+    margin-bottom:  0;
+    min-width: 300px;
+    @media screen and (max-width: 768px) {
+      min-width: 150px;
+    }
+  }
+  input[type=search] {
+    background: lighten(@accent, 32%);
+    border: solid 2px darken(@accent, 5%);
+    border-right: none;
+    padding: 10px 10px;
+    outline: none;
+    width: 100%;
+    .placeholder (lighten(@accent,10%),false);
+  }
+  button {
+    background: darken(@accent, 10%);
+    box-shadow: none;
+    border: solid 2px darken(@accent, 5%);
+    text-shadow: none;
+    padding: 10px 13px;
+    border-left: none;
+    margin-left: -7px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    outline: none;
+  }
+}
+
+#site-logo {
+  display: inline-block;
+  float: left;
+  img {
+    max-height: 70px;
+  }
+  @media screen and (max-width: 991px) {
+    float: none;
+  }
+}
+
+#bar {
+  margin-top: 45px;
+  background: fade(@t-accent, 100%);
+  border-right: 15px solid @outerbg;
+  border-left: 15px solid @outerbg;
+  padding: 0;
+
+}
+#header-image {
+  position: relative;
+  border-bottom: solid 5px darken(@s-accent,5%);
+  box-shadow: inset 0px -39px 0px black;
+  overflow: hidden;
+
+  .image {
+    position: relative;
+    opacity: 1;
+    -webkit-filter: brightness(0.9);
+    filter: brightness(0.9);
+    transform-origin: center;
+    .transition(4s all ease);
+  }
+  .header-data {
+    position: absolute;
+    bottom: 65%;
+    @media screen and (max-width: 767px) {
+      bottom:55%;
+    }
+    text-align: center;
+    width: 100%;
+    .transform(translateY(50%));
+    .header-title {
+      font-size: 36px;
+      @media screen and (max-width: 767px) {
+        font-size: 18px;
+      }
+      font-weight: bold;
+      color: white;
+      text-shadow: 1px 1px 0px @s-accent,-1px -1px 0px fade(@accent,20%);
+    }
+    .description {
+      font-size: 17px;
+      @media screen and (max-width: 767px) {
+        font-size: 13px;
+      }
+      color: white;
+      text-shadow: 0px 0px 1px #444;
+      max-width: 50%;
+      margin-left: 25%;
+      text-align: center;
+    }
+    .buttons {
+      text-align: center;
+      margin-top: 10px;
+      .button1, .button2 {
+        display: inline-block;
+        a {
+          padding: 10px;
+          @media screen and (max-width: 767px) {
+            padding: 4px;
+            font-size: 12px;
+          }
+          border: dashed 2px transparent;
+          display: inline-block;
+          border-radius: 5px;
+          color: @onaccent;
+          .transition(0.4s all ease);
+          &:hover {
+            border-color: white;
+          }
+        }
+      }
+      .button1 a {
+        background: fade(@accent,80%);
+
+      }
+      .button2 a {
+        background: fade(darken(@s-accent,5%),80%);
+
+      }
+
+    }
+  }
+  &:hover {
+    .image {
+      .transform(scale(1.1));
+      -webkit-filter: brightness(0.8);
+      filter: brightness(0.8);
+    }
+  }
+}
+//logo
+.site-logo {
+  display: inline-block;
+  float: none;
+  text-align: center;
+  margin-bottom: 22px;
+  max-width: 100px;
+  max-height: 100px;
+  @media screen and (max-width: 767px) {
+    float: none;
+    max-width: 40px;
+    max-height: 40px;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    float: none;
+    max-width: 60px;
+    max-height: 60px;
+    display: inline-block;
   }
 }

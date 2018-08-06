@@ -137,7 +137,7 @@ function synapse_primary_class() {
 	
 	if ( !synapse_load_sidebar() ) 
 		$class = "col-md-12";
-
+	
 	echo esc_attr($class);
 }
 add_action('synapse_primary-width', 'synapse_primary_class');
@@ -149,6 +149,7 @@ function synapse_secondary_class() {
 	echo esc_attr($class);
 }
 add_action('synapse_secondary-width', 'synapse_secondary_class');
+
 
 /*
 **	Helper Function to Convert Colors

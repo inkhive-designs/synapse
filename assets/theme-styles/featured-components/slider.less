@@ -1,3 +1,84 @@
+//Slider Featured posts
+#slider-feat_posts {
+  padding: 20px 15px;
+  overflow: hidden;
+  .section-title {
+    padding-left: 0;
+  }
+  .swiper-posts-slider {
+    position: relative;
+  }
+  .swiper-wrapper {
+    position: relative;
+  }
+  .swiper-container-horizontal>.swiper-pagination {
+    bottom: -32px;
+  }
+  .swiper-pagination-white .swiper-pagination-bullet {
+    background: #777;
+    opacity: 0.5;
+  }
+  .swiper-pagination-white .swiper-pagination-bullet-active {
+    background: @t-accent;
+    opacity: 1;
+  }
+
+  .swiper-slide {
+    .product-details {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      h3 {
+        margin: 0;
+        padding: 8px 8px;
+        font-size: 16px;
+        background: fade(@t-accent,60%);
+        width: 100%;
+        color: white;
+        font-weight: normal;
+       // .title-font;
+      }
+    }
+    img {
+      .transition(0.4s all ease);
+      -webkit-filter: brightness(0.8);
+      filter: brightness(0.8);
+    }
+    &:nth-child(3n+1) .product-details h3 {
+      background: fade(@accent,90%);
+    }
+    &:nth-child(3n+2) .product-details h3 {
+      background: fade(@s-accent,90%);
+    }
+    &:nth-child(3n+3) .product-details h3 {
+      background: fade(@t-accent,90%);
+    }
+    &:hover {
+      img {
+        -webkit-filter: brightness(1);
+        filter: brightness(1);
+      }
+    }
+  }
+
+}
+
+/*Image title styles*/
+.image_title {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0; bottom: 0;
+  width: 640px;
+
+}
+.image_title a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 20px;
+  font-size: 16px;
+}
+
 /* top slider */
 #slider-bg {
   padding-top: 15px;
