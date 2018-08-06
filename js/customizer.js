@@ -112,6 +112,17 @@
 		});
 	});
 
+
+	//Sidebar
+    wp.customize( 'synapse_sidebar_width', function( value ) {
+        value.bind( function( to ) {
+            var SidebarWidth    =   (to * 100) / 12;
+            $('#secondary').css('width', SidebarWidth + '%' );
+            $('#primary, #primary-mono').css('width', 100 - SidebarWidth + '%' );
+        } );
+    } );
+
+
     //Typography
     //Fonts
     wp.customize( 'synapse_title_font', function( value ) {

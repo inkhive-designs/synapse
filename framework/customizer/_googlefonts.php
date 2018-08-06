@@ -6,7 +6,6 @@ function synapse_customize_register_fonts( $wp_customize ) {
         array(
             'title'     => __('Google Web Fonts','synapse'),
             'priority'  => 41,
-            'description' => __('Defaults: Play, Lap.','synapse'),
             'panel'     => 'synapse_design_panel'
         )
     );

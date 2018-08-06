@@ -21,8 +21,8 @@ function synapse_customize_register_misc( $wp_customize ) {
             array(
                 'settings'		=> 'synapse_important_links',
                 'section'		=> 'synapse_sec_upgrade',
-                'description'	=> '<a class="synapse-important-links" href="https://inkhive.com/contact-us/" target="_blank">'.__('Theme Support', 'synapse').'</a>
-                                    <a class="synapse-important-links" href="https://demo.inkhive.com/synapse-pro/" target="_blank">'.__('Synapse Live Demo', 'synapse').'</a>
+                'description'	=> '<a class="synapse-important-links" href="https://inkhive.com/contact-us/" target="_blank">'.__('InkHive Support Forum', 'synapse').'</a>
+                                    <a class="synapse-important-links" href="https://demo.inkhive.com/synapse-pro/" target="_blank">'.__('Revive Live Demo', 'synapse').'</a>
                                     <a class="synapse-important-links" href="https://www.facebook.com/inkhivethemes/" target="_blank">'.__('We Love Our Facebook Fans', 'synapse').'</a>
                                     <a class="synapse-important-links" href="https://wordpress.org/support/theme/synapse/reviews" target="_blank">'.__('Review Us', 'synapse').'</a>'
             )

@@ -15,12 +15,11 @@
 
     <?php get_template_part('modules/header/jumbosearch'); ?>
 
+    <?php get_template_part('topad'); ?>
     <?php get_template_part('modules/header/top-bar'); ?>
     <?php get_template_part('modules/header/masthead'); ?>
 
 	<div class="mega-container container-fluid">
-		
-	<?php get_template_part('topad'); ?>
 	
 	<?php get_template_part('slider', 'feat_posts'); ?>
 

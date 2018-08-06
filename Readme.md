@@ -3,7 +3,7 @@
 **Contributors:** (inkhive)  
 **Requires at least:** WordPress 4.4  
 **Tested up to:** WordPress 4.9
-**Version:** 1.2.0
+**Version:** 1.2.1
 **License:** GPL v3  
 **License URI:** http://www.gnu.org/licenses/gpl-3.0.html  
 **Tags:** custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, blog, holiday, post-formats, custom-header, grid-layout
@@ -72,6 +72,14 @@ Source: https://pixabay.com/en/service/terms/
         https://unsplash.com/license
 
 ## Changelog
+
+### Version 1.2.1
+
+* Sidebar Control Upgrade
+* Maximum Blog Layout Improved
+* Advertisement Area Added
+* Skin Issues Fixed
+* Minor Bug Fixes
 
 ### Version 1.2.0
 
