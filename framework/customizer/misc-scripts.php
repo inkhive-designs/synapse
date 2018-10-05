@@ -22,9 +22,10 @@ function synapse_customize_register_misc( $wp_customize ) {
                 'settings'		=> 'synapse_important_links',
                 'section'		=> 'synapse_sec_upgrade',
                 'description'	=> '<a class="synapse-important-links" href="https://inkhive.com/contact-us/" target="_blank">'.__('InkHive Support Forum', 'synapse').'</a>
-                                    <a class="synapse-important-links" href="https://demo.inkhive.com/synapse-pro/" target="_blank">'.__('Revive Live Demo', 'synapse').'</a>
-                                    <a class="synapse-important-links" href="https://www.facebook.com/inkhivethemes/" target="_blank">'.__('We Love Our Facebook Fans', 'synapse').'</a>
-                                    <a class="synapse-important-links" href="https://wordpress.org/support/theme/synapse/reviews" target="_blank">'.__('Review Us', 'synapse').'</a>'
+                                    <a class="synapse-important-links" href="https://demo.inkhive.com/synapse-pro/" target="_blank">'.__('Synapse Demo', 'synapse').'</a>
+                  <a class="synapse-important-links" href="https://www.facebook.com/inkhivethemes/" target="_blank">'.__('We Love Our Facebook Fans', 'synapse').'</a>
+				  <a class="synapse-important-links" href="https://wordpress.org/support/theme/synapse/reviews" target="_blank">'.__('Review Us', 'synapse').'</a>
+                                    <a class="synapse-important-links synapse-pro" href="https://inkhive.com/product/synapse" target="_blank">'.__('Go Pro!', 'synapse').'</a>'
             )
         )
     );

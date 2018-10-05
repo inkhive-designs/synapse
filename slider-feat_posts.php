@@ -48,6 +48,7 @@
 
 			</div>
 			<!-- Add Pagination -->
+			<div class="swiper-pagination-x"></div>
 
 			<div class="swiper-button-next nb swiper-button-white"></div>
 			<div class="swiper-button-prev pb swiper-button-white"></div>

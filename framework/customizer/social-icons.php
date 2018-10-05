@@ -47,7 +47,6 @@ function synapse_customize_register_social( $wp_customize ) {
         'google-plus' => __('Google Plus','synapse'),
         'instagram' => __('Instagram','synapse'),
         'rss' => __('RSS Feeds','synapse'),
-        'vine' => __('Vine','synapse'),
         'vimeo-square' => __('Vimeo','synapse'),
         'youtube' => __('Youtube','synapse'),
         'flickr' => __('Flickr','synapse'),
@@ -55,7 +54,7 @@ function synapse_customize_register_social( $wp_customize ) {
 
     $social_count = count($social_networks);
 
-    for ($x = 1 ; $x <= ($social_count - 3) ; $x++) :
+    for ($x = 1 ; $x <= ($social_count - 2) ; $x++) :
 
         $wp_customize->add_setting(
             'synapse_social_'.$x, array(
@@ -95,7 +94,6 @@ function synapse_customize_register_social( $wp_customize ) {
             'google-plus',
             'instagram',
             'rss',
-            'vine',
             'vimeo-square',
             'youtube',
             'flickr'

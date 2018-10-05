@@ -16,7 +16,7 @@ Important Links
  -----------------*/
 .synapse-important-links{
 	background: @accent;
-	padding: 5px 10px;
+	padding: 15px 10px;
 	color: #FFF !important;
 	text-align: center;
 	display: block;
@@ -25,10 +25,20 @@ Important Links
 	box-shadow: none;
 	font-style: normal;
 	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: .04em;
+	&.synapse-pro {
+		background: #345d79;
+		&:hover {
+			background: darken( #345d79, 15%);
+		}
+	}
 }
+
 .synapse-important-links:hover{
 	background: darken(@accent, 15%);
 }
+
 
 /*-------------
 Skins
