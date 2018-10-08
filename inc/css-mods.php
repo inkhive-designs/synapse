@@ -35,6 +35,11 @@ function synapse_custom_css_mods() {
 	if ( get_theme_mod('synapse_header_desccolor','#aaa') ) :
 		echo ".site-description { color: ".esc_html( get_theme_mod('synapse_header_desccolor','#aaa') )."; }";
 	endif;
+
+    if (  get_theme_mod('synapse_fc_line_disable', true)) {
+        echo "#colophon .footer_credit_line { display: none }";
+    }
+
 	//Check Jetpack is active
 	if ( class_exists( 'Jetpack' ) && Jetpack::is_module_active( 'infinite-scroll' ) )
 		echo '.pagination { display: none; }';
@@ -43,6 +48,10 @@ function synapse_custom_css_mods() {
 	if ( get_theme_mod('synapse_hide_title_tagline') ) :
 		echo "#masthead .site-branding #text-title-desc { display: none; }";
 	endif;
+
+    if ( get_theme_mod('background_image') !='' ) :
+        echo ".mega-container { background: none; border-left: none; border-right: none; }";
+    endif;
 
     // page & post fontsize
     if(get_theme_mod('synapse_content_page_post_fontsize_set')):
@@ -64,7 +73,7 @@ function synapse_custom_css_mods() {
     if(get_theme_mod('synapse_content_site_title_fontsize_set')):
         $val = get_theme_mod('synapse_content_site_title_fontsize_set');
         if($val != 'default'):
-            echo ".site-branding .site-title {font-size:".$val."px;}";
+            echo ".site-branding .site-title {font-size:".$val."px !important;}";
         else:
             echo ".site-branding .site-title {font-size:50"."px;}";
         endif;
@@ -75,7 +84,7 @@ function synapse_custom_css_mods() {
     if(get_theme_mod('synapse_content_site_desc_fontsize_set')):
         $val=get_theme_mod('synapse_content_site_desc_fontsize_set');
         if($val != 'default'):
-            echo ".site-branding .site-description{font-size:".$val."px;}";
+            echo ".site-branding .site-description{font-size:".$val."px !important;}";
         else:
             echo ".site-branding .site-description {font-size:15"."px;}";
         endif;

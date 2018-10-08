@@ -162,7 +162,7 @@ function synapse_customize_register_layouts( $wp_customize ) {
             'label'    => __( 'Disable Footer Credit Line.','synapse' ),
             'section'  => 'synapse_custom_footer',
             'type'     => 'checkbox',
-            'default'  => false
+            'default'  => true
         )
     );
 
